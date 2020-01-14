@@ -1,0 +1,35 @@
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\bin\Debug\Acos Installer.exe.config
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\bin\Debug\Acos Installer.exe
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\bin\Debug\Acos Installer.pdb
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos Installer.csprojResolveAssemblyReference.cache
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos_Installer.Form1.resources
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos_Installer.Properties.Resources.resources
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos Installer.csproj.GenerateResource.Cache
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos Installer.csproj.CoreCompileInputs.cache
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos Installer.exe
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos Installer.pdb
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos Installer.csproj.ResolveComReference.cache
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos Installer.csprojAssemblyReference.cache
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos Installer.csproj.ResolveComReference.cache
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos_Installer.Form1.resources
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos Installer.csproj.GenerateResource.cache
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\Acos Installer.csproj.CoreCompileInputs.cache
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\bin\Debug\IT Installer.exe.config
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\bin\Debug\IT Installer.exe
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\bin\Debug\IT Installer.pdb
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\IT_Installer.Properties.Resources.resources
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\IT Installer.exe
+C:\Users\krisyv\Desktop\Acos Installer\Acos Installer\Acos Installer\obj\Debug\IT Installer.pdb
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\bin\Debug\IT Installer.exe.config
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\bin\Debug\IT Installer.exe
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\bin\Debug\IT Installer.pdb
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\obj\Debug\Acos Installer.csprojAssemblyReference.cache
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\obj\Debug\Acos Installer.csproj.ResolveComReference.cache
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\obj\Debug\Acos_Installer.Form1.resources
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\obj\Debug\IT_Installer.Properties.Resources.resources
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\obj\Debug\Acos Installer.csproj.GenerateResource.cache
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\obj\Debug\IT Installer.exe
+C:\Users\kran\Desktop\Acos Installer\Acos Installer\obj\Debug\IT Installer.pdb
