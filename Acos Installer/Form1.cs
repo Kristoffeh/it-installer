@@ -15,7 +15,7 @@ namespace Acos_Installer
 {
     public partial class Form1 : Form
     {
-        public static string global_version = "7.0";
+        public static string global_version = "8.2";
 
         public Form1()
         {
@@ -24,11 +24,10 @@ namespace Acos_Installer
 
         private void btn_startInstall_Click(object sender, EventArgs e)
         {
-
-            if (cb_uninstallwebsak.Checked == false && cb_variables.Checked == false && cb_ansettelse.Checked == false && cb_apen.Checked == false && cb_chrome.Checked == false && cb_citrix.Checked == false && cb_trace.Checked == false && cb_websak.Checked == false)
-            {
-                MessageBox.Show("Du har ikke valgt noe", "Advarsel");
-            }
+            loadingLog.Clear();
+            btn_startInstall.Enabled = false;
+            var checkedBoxes = this.groupBox1.Controls.OfType<CheckBox>().Count(c => c.Checked);
+            
             if (cb_uninstallwebsak.Checked)
             {
                 IsProgramInstalled("ACOS Enkelsak 4.0.106");
@@ -92,8 +91,7 @@ namespace Acos_Installer
                 createShortcut("Ny Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application", "https://sone.andoy.kommune.no/Citrix/RADCXStoreWeb/");
             }
 
-            loadingLog.Text += "Ferdig med alt! \r\n";
-
+            btn_startInstall.Enabled = true;
         }
 
         public void RunInstallMSI(string filename, string appname)
