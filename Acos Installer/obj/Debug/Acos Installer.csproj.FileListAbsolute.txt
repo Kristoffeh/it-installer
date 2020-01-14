@@ -44,3 +44,8 @@ C:\Users\kran\Documents\GitHub\it-installer\Acos Installer\obj\Debug\IT_Installe
 C:\Users\kran\Documents\GitHub\it-installer\Acos Installer\obj\Debug\Acos Installer.csproj.GenerateResource.cache
 C:\Users\kran\Documents\GitHub\it-installer\Acos Installer\obj\Debug\IT Installer.exe
 C:\Users\kran\Documents\GitHub\it-installer\Acos Installer\obj\Debug\IT Installer.pdb
+C:\Users\kran\Documents\GitHub\it-installer\Acos Installer\bin\Debug\IT Installer.exe.manifest
+C:\Users\kran\Documents\GitHub\it-installer\Acos Installer\bin\Debug\IT Installer.application
+C:\Users\kran\Documents\GitHub\it-installer\Acos Installer\obj\Debug\IT Installer.TrustInfo.xml
+C:\Users\kran\Documents\GitHub\it-installer\Acos Installer\obj\Debug\IT Installer.exe.manifest
+C:\Users\kran\Documents\GitHub\it-installer\Acos Installer\obj\Debug\IT Installer.application
