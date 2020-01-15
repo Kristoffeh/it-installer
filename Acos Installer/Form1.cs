@@ -91,11 +91,14 @@ namespace Acos_Installer
             }
             if (cb_checkforticlient.Checked)
             {
+                int valueschanged = 0;
                 loadingLog.Text += "Sjekker register mot Forticlient EMS \r\n";
 
-                RegistryKey LocalMachine = RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine, RegistryView.Registry64); //here you specify where exactly you want your entry
+                RegistryKey LocalMachine = RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine, RegistryView.Registry64);
+                RegistryKey LocalMachine32 = RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine, RegistryView.Registry32);
 
                 var reg = LocalMachine.OpenSubKey("Software\\Fortinet\\FortiClient\\Sslvpn\\Tunnels\\Andøy Kommune", true);
+                var reg32 = LocalMachine.OpenSubKey("Software\\Fortinet\\FortiClient\\Sslvpn\\Tunnels\\Andøy Kommune", true);
 
                 if (reg == null)
                 {
@@ -105,13 +108,46 @@ namespace Acos_Installer
                 if (reg.GetValue("Server") == null)
                 {
                     reg.SetValue("Server", "vpn.andoy.kommune.no:10443");
-                    loadingLog.Text += "Oppdatert verdi(server) \r\n";
+                    loadingLog.Text += "Oppdatert verdi(Server) \r\n";
+                    valueschanged += 1;
                 }
 
                 if (reg.GetValue("Description") == null)
                 {
-                    reg.SetValue("Description", "");
+                    reg.SetValue("Description", "VPN tilkobling til Andøy Kommune");
+                    loadingLog.Text += "Oppdatert verdi(Description) \r\n";
+                    valueschanged += 1;
                 }
+
+                if (reg.GetValue("DATA3") == null)
+                {
+                    reg.SetValue("DATA3", "");
+                    loadingLog.Text += "Oppdatert verdi(DATA3) \r\n";
+                    valueschanged += 1;
+                }
+
+                if (reg.GetValue("ServerCert") == null)
+                {
+                    reg.SetValue("ServerCert", "1");
+                    loadingLog.Text += "Oppdatert verdi(ServerCert) \r\n";
+                    valueschanged += 1;
+                }
+
+                if (reg32.GetValue("promptcertificate") == null)
+                {
+                    reg.SetValue("promptcertificate", "0", RegistryValueKind.DWord); // Create 32-bit DWORD (for 0 or 1 values)
+                    loadingLog.Text += "Oppdatert verdi(promptcertificate) \r\n";
+                    valueschanged += 1;
+                }
+
+                if (reg32.GetValue("promptusername") == null)
+                {
+                    reg.SetValue("promptusername", "1", RegistryValueKind.DWord); // Create 32-bit DWORD (for 0 or 1 values)
+                    loadingLog.Text += "Oppdatert verdi(promptusername) \r\n";
+                    valueschanged += 1;
+                }
+
+                loadingLog.Text += "Fullført! " + valueschanged.ToString() + " nøkler endret.";
 
             }
             btn_startInstall.Enabled = true;

@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IT Installer.exe" size="246344">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IT Installer.exe" size="247368">
       <assemblyIdentity name="IT Installer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>IjPaf3ztAaSQt93gfWyCj67KDV5/YmBOdta0DKtwc5U=</dsig:DigestValue>
+        <dsig:DigestValue>nbAoOrAMmTeT7KeDbTZ9JSo0m66GkRo0mcoucVbosAc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
