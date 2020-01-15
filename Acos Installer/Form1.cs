@@ -27,7 +27,7 @@ namespace Acos_Installer
             loadingLog.Clear();
             btn_startInstall.Enabled = false;
             var checkedBoxes = this.groupBox1.Controls.OfType<CheckBox>().Count(c => c.Checked);
-            
+
             if (cb_uninstallwebsak.Checked)
             {
                 IsProgramInstalled("ACOS Enkelsak 4.0.106");
@@ -40,7 +40,6 @@ namespace Acos_Installer
                 IsProgramInstalled("ACOS Enkelsak for Outlook 4.0.72");
                 loadingLog.Text += "Ferdig med Avinnstaleringen \r\n";
             }
-
             if (cb_installwebsak.Checked)
             {
                     loadingLog.Text += "Installerer ACOS programmer \r\n";
@@ -53,28 +52,23 @@ namespace Acos_Installer
                     RunInstallMSI("msi\\AcosTrace.msi", "ACOS Trace");
                     ConfigureWindowsRegistry();
             }
-
             if (cb_variables.Checked)
             {
                 ConfigureWindowsRegistry();
             }
-
             if (cb_websak.Checked)
             {
                 createShortcut("Websak DRIFT", "C:\\Program Files (x86)\\ACOS AS\\ACOS Websak Basis\\sak.exe", "Sakbehandlingssystem fra ACOS", "C:\\Program Files (x86)\\ACOS AS\\ACOS Websak Basis", "");
             }
-
             if (cb_ansettelse.Checked)
             {
                 createShortcut("Websak Ansettelse", "C:\\Program Files (x86)\\ACOS AS\\ACOS Websak Basis\\Ansettelse.exe", "Ansettelse fra ACOS", "C:\\Program Files (x86)\\ACOS AS\\ACOS Websak Basis", "");
             }
-
             if (cb_trace.Checked)
             {
                 createShortcut("ACOS Trace Server", "C:\\Program Files (x86)\\ACOS AS\\ACOS WebSak Trace\\Acos.WebSak.TraceServer.exe", "Ansettelse fra ACOS", "C:\\Program Files (x86)\\ACOS AS\\ACOS WebSak Trace", "");
                 createShortcut("ACOS Trace Client", "C:\\Program Files (x86)\\ACOS AS\\ACOS WebSak Trace\\Acos.Websak.TraceViewer.StandAlone.exe", "Ansettelse fra ACOS", "C:\\Program Files (x86)\\ACOS AS\\ACOS WebSak Trace", "");
             }
-
             if (cb_chrome.Checked)
             {
                 loadingLog.Text += "Starter installasjonen av Chrome \r\n";
@@ -90,7 +84,36 @@ namespace Acos_Installer
                 createShortcut("Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application", "10.10.10.13");
                 createShortcut("Ny Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application", "https://sone.andoy.kommune.no/Citrix/RADCXStoreWeb/");
             }
+            if (cb_forticlientems.Checked)
+            {
+                loadingLog.Text += "Starter installasjonen av Forticlient EMS \r\n";
+                RunInstallMSI("msi\\ForticlientEMS.msi", "Forticlient EMS");
+            }
+            if (cb_checkforticlient.Checked)
+            {
+                loadingLog.Text += "Sjekker register mot Forticlient EMS \r\n";
 
+                RegistryKey LocalMachine = RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine, RegistryView.Registry64); //here you specify where exactly you want your entry
+
+                var reg = LocalMachine.OpenSubKey("Software\\Fortinet\\FortiClient\\Sslvpn\\Tunnels\\Andøy Kommune", true);
+
+                if (reg == null)
+                {
+                    reg = LocalMachine.CreateSubKey("Software\\Fortinet\\FortiClient\\Sslvpn\\Tunnels\\Andøy Kommune");
+                }
+
+                if (reg.GetValue("Server") == null)
+                {
+                    reg.SetValue("Server", "vpn.andoy.kommune.no:10443");
+                    loadingLog.Text += "Oppdatert verdi(server) \r\n";
+                }
+
+                if (reg.GetValue("Description") == null)
+                {
+                    reg.SetValue("Description", "");
+                }
+
+            }
             btn_startInstall.Enabled = true;
         }
 
@@ -109,7 +132,6 @@ namespace Acos_Installer
         public void IsProgramInstalled(string displayName)
         {
             string uninstallKey = string.Empty;
-
             uninstallKey = @"SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall";
             using (RegistryKey rk = Registry.LocalMachine.OpenSubKey(uninstallKey))
             {
