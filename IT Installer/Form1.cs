@@ -81,8 +81,12 @@ namespace Acos_Installer
             }
             if (cb_apen.Checked)
             {
-                createShortcut("Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application", "10.10.10.13");
-                createShortcut("Ny Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application", "https://sone.andoy.kommune.no/Citrix/RADCXStoreWeb/");
+                createShortcut("Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application", "http://10.10.10.13/Citrix/AccessPlatform/auth/login.aspx");
+                createShortcut("Ny Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application", "https://vak-citrixadm.andoy.kommune.no/Citrix/KommuneApplikasjonerWeb/");
+            }
+            if (cb_offisiellaapen.Checked)
+            {
+                createShortcut("Offisiell Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "Offisiell Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application", "https://sone.andoy.kommune.no/Citrix/RADCXStoreWeb/");
             }
             if (cb_forticlientems.Checked)
             {

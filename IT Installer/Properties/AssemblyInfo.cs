@@ -8,17 +8,17 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("IT Installer")]
 [assembly: AssemblyDescription("Installerer programmer i bakgrunnen")]
-[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyConfiguration("Test")]
 [assembly: AssemblyCompany("Andøy Kommune")]
 [assembly: AssemblyProduct("IT Installer")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Andøy Kommune")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from
 // COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
+[assembly: ComVisible(true)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("8b594ee6-f48d-4c7d-bab1-07518338a1cc")]

@@ -44,8 +44,9 @@
             this.cb_variables = new System.Windows.Forms.CheckBox();
             this.cb_installwebsak = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cb_forticlientems = new System.Windows.Forms.CheckBox();
             this.cb_checkforticlient = new System.Windows.Forms.CheckBox();
+            this.cb_forticlientems = new System.Windows.Forms.CheckBox();
+            this.cb_offisiellaapen = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -132,11 +133,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cb_offisiellaapen);
             this.groupBox2.Controls.Add(this.cb_apen);
             this.groupBox2.Controls.Add(this.cb_citrix);
             this.groupBox2.Location = new System.Drawing.Point(14, 173);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(314, 52);
+            this.groupBox2.Size = new System.Drawing.Size(314, 81);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Åpen Sone";
@@ -212,12 +214,23 @@
             this.groupBox3.Controls.Add(this.cb_checkforticlient);
             this.groupBox3.Controls.Add(this.cb_forticlientems);
             this.groupBox3.Controls.Add(this.cb_chrome);
-            this.groupBox3.Location = new System.Drawing.Point(14, 231);
+            this.groupBox3.Location = new System.Drawing.Point(16, 260);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(312, 92);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Annet";
+            // 
+            // cb_checkforticlient
+            // 
+            this.cb_checkforticlient.AutoSize = true;
+            this.cb_checkforticlient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_checkforticlient.Location = new System.Drawing.Point(141, 44);
+            this.cb_checkforticlient.Name = "cb_checkforticlient";
+            this.cb_checkforticlient.Size = new System.Drawing.Size(126, 19);
+            this.cb_checkforticlient.TabIndex = 3;
+            this.cb_checkforticlient.Text = "Forticlient Registry";
+            this.cb_checkforticlient.UseVisualStyleBackColor = true;
             // 
             // cb_forticlientems
             // 
@@ -230,16 +243,16 @@
             this.cb_forticlientems.Text = "Forticlient EMS";
             this.cb_forticlientems.UseVisualStyleBackColor = true;
             // 
-            // cb_checkforticlient
+            // cb_offisiellaapen
             // 
-            this.cb_checkforticlient.AutoSize = true;
-            this.cb_checkforticlient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_checkforticlient.Location = new System.Drawing.Point(141, 44);
-            this.cb_checkforticlient.Name = "cb_checkforticlient";
-            this.cb_checkforticlient.Size = new System.Drawing.Size(126, 19);
-            this.cb_checkforticlient.TabIndex = 3;
-            this.cb_checkforticlient.Text = "Forticlient Registry";
-            this.cb_checkforticlient.UseVisualStyleBackColor = true;
+            this.cb_offisiellaapen.AutoSize = true;
+            this.cb_offisiellaapen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_offisiellaapen.Location = new System.Drawing.Point(8, 44);
+            this.cb_offisiellaapen.Name = "cb_offisiellaapen";
+            this.cb_offisiellaapen.Size = new System.Drawing.Size(129, 19);
+            this.cb_offisiellaapen.TabIndex = 2;
+            this.cb_offisiellaapen.Text = "Offisiell Åpen Sone";
+            this.cb_offisiellaapen.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -291,6 +304,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox cb_forticlientems;
         private System.Windows.Forms.CheckBox cb_checkforticlient;
+        private System.Windows.Forms.CheckBox cb_offisiellaapen;
     }
 }
 
