@@ -37,6 +37,7 @@
             this.cb_trace = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cb_offisiellaapen = new System.Windows.Forms.CheckBox();
             this.cb_apen = new System.Windows.Forms.CheckBox();
             this.cb_citrix = new System.Windows.Forms.CheckBox();
             this.cb_chrome = new System.Windows.Forms.CheckBox();
@@ -46,7 +47,8 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cb_checkforticlient = new System.Windows.Forms.CheckBox();
             this.cb_forticlientems = new System.Windows.Forms.CheckBox();
-            this.cb_offisiellaapen = new System.Windows.Forms.CheckBox();
+            this.cb_acrobat = new System.Windows.Forms.CheckBox();
+            this.cb_firefox = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -78,7 +80,7 @@
             // 
             this.cb_ansettelse.AutoSize = true;
             this.cb_ansettelse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_ansettelse.Location = new System.Drawing.Point(141, 19);
+            this.cb_ansettelse.Location = new System.Drawing.Point(160, 19);
             this.cb_ansettelse.Name = "cb_ansettelse";
             this.cb_ansettelse.Size = new System.Drawing.Size(117, 19);
             this.cb_ansettelse.TabIndex = 1;
@@ -143,6 +145,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Åpen Sone";
             // 
+            // cb_offisiellaapen
+            // 
+            this.cb_offisiellaapen.AutoSize = true;
+            this.cb_offisiellaapen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_offisiellaapen.Location = new System.Drawing.Point(8, 44);
+            this.cb_offisiellaapen.Name = "cb_offisiellaapen";
+            this.cb_offisiellaapen.Size = new System.Drawing.Size(129, 19);
+            this.cb_offisiellaapen.TabIndex = 2;
+            this.cb_offisiellaapen.Text = "Offisiell Åpen Sone";
+            this.cb_offisiellaapen.UseVisualStyleBackColor = true;
+            // 
             // cb_apen
             // 
             this.cb_apen.AutoSize = true;
@@ -158,7 +171,7 @@
             // 
             this.cb_citrix.AutoSize = true;
             this.cb_citrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_citrix.Location = new System.Drawing.Point(141, 19);
+            this.cb_citrix.Location = new System.Drawing.Point(160, 19);
             this.cb_citrix.Name = "cb_citrix";
             this.cb_citrix.Size = new System.Drawing.Size(53, 19);
             this.cb_citrix.TabIndex = 1;
@@ -171,9 +184,9 @@
             this.cb_chrome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_chrome.Location = new System.Drawing.Point(8, 19);
             this.cb_chrome.Name = "cb_chrome";
-            this.cb_chrome.Size = new System.Drawing.Size(70, 19);
+            this.cb_chrome.Size = new System.Drawing.Size(93, 19);
             this.cb_chrome.TabIndex = 1;
-            this.cb_chrome.Text = "Chrome";
+            this.cb_chrome.Text = "Chrome x64";
             this.cb_chrome.UseVisualStyleBackColor = true;
             // 
             // cb_uninstallwebsak
@@ -211,6 +224,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.cb_firefox);
+            this.groupBox3.Controls.Add(this.cb_acrobat);
             this.groupBox3.Controls.Add(this.cb_checkforticlient);
             this.groupBox3.Controls.Add(this.cb_forticlientems);
             this.groupBox3.Controls.Add(this.cb_chrome);
@@ -225,7 +240,7 @@
             // 
             this.cb_checkforticlient.AutoSize = true;
             this.cb_checkforticlient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_checkforticlient.Location = new System.Drawing.Point(141, 44);
+            this.cb_checkforticlient.Location = new System.Drawing.Point(158, 44);
             this.cb_checkforticlient.Name = "cb_checkforticlient";
             this.cb_checkforticlient.Size = new System.Drawing.Size(126, 19);
             this.cb_checkforticlient.TabIndex = 3;
@@ -236,23 +251,34 @@
             // 
             this.cb_forticlientems.AutoSize = true;
             this.cb_forticlientems.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_forticlientems.Location = new System.Drawing.Point(141, 19);
+            this.cb_forticlientems.Location = new System.Drawing.Point(8, 42);
             this.cb_forticlientems.Name = "cb_forticlientems";
             this.cb_forticlientems.Size = new System.Drawing.Size(109, 19);
             this.cb_forticlientems.TabIndex = 2;
             this.cb_forticlientems.Text = "Forticlient EMS";
             this.cb_forticlientems.UseVisualStyleBackColor = true;
             // 
-            // cb_offisiellaapen
+            // cb_acrobat
             // 
-            this.cb_offisiellaapen.AutoSize = true;
-            this.cb_offisiellaapen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_offisiellaapen.Location = new System.Drawing.Point(8, 44);
-            this.cb_offisiellaapen.Name = "cb_offisiellaapen";
-            this.cb_offisiellaapen.Size = new System.Drawing.Size(129, 19);
-            this.cb_offisiellaapen.TabIndex = 2;
-            this.cb_offisiellaapen.Text = "Offisiell Åpen Sone";
-            this.cb_offisiellaapen.UseVisualStyleBackColor = true;
+            this.cb_acrobat.AutoSize = true;
+            this.cb_acrobat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_acrobat.Location = new System.Drawing.Point(8, 67);
+            this.cb_acrobat.Name = "cb_acrobat";
+            this.cb_acrobat.Size = new System.Drawing.Size(111, 19);
+            this.cb_acrobat.TabIndex = 4;
+            this.cb_acrobat.Text = "Acrobat Reader";
+            this.cb_acrobat.UseVisualStyleBackColor = true;
+            // 
+            // cb_firefox
+            // 
+            this.cb_firefox.AutoSize = true;
+            this.cb_firefox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_firefox.Location = new System.Drawing.Point(158, 19);
+            this.cb_firefox.Name = "cb_firefox";
+            this.cb_firefox.Size = new System.Drawing.Size(86, 19);
+            this.cb_firefox.TabIndex = 5;
+            this.cb_firefox.Text = "Firefox x64";
+            this.cb_firefox.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -305,6 +331,8 @@
         private System.Windows.Forms.CheckBox cb_forticlientems;
         private System.Windows.Forms.CheckBox cb_checkforticlient;
         private System.Windows.Forms.CheckBox cb_offisiellaapen;
+        private System.Windows.Forms.CheckBox cb_acrobat;
+        private System.Windows.Forms.CheckBox cb_firefox;
     }
 }
 

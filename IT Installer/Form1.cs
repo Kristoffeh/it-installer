@@ -15,7 +15,7 @@ namespace Acos_Installer
 {
     public partial class Form1 : Form
     {
-        public static string global_version = "8.2";
+        public static string global_version = "8.3";
 
         public Form1()
         {
@@ -51,6 +51,15 @@ namespace Acos_Installer
                     RunInstallMSI("msi\\OfficeTillegg.msi", "ACOS Office Tillegg");
                     RunInstallMSI("msi\\AcosTrace.msi", "ACOS Trace");
                     ConfigureWindowsRegistry();
+            }
+            if (cb_acrobat.Checked)
+            {
+                InstallAcrobat();
+            }
+            if (cb_firefox.Checked)
+            {
+                loadingLog.Text += "Installerer Firefox";
+                RunInstallMSI("msi\\Firefox.msi", "Firefox");
             }
             if (cb_variables.Checked)
             {
@@ -155,6 +164,31 @@ namespace Acos_Installer
 
             }
             btn_startInstall.Enabled = true;
+        }
+
+        public void InstallAcrobat()
+        {
+           
+
+            try
+            {
+                loadingLog.Text += "Installerer Acrobat Reader \r\n";
+
+                var proc1 = new ProcessStartInfo();
+                string Command;
+                proc1.UseShellExecute = true;
+                Command = @"cd msi\\readerdc_en_a_install.exe /msi EULA_ACCEPT=YES /qn";
+                proc1.WorkingDirectory = @"C:\Windows\System32";
+                proc1.FileName = @"C:\Windows\System32\cmd.exe";
+                /// as admin = proc1.Verb = "runas";
+                proc1.Arguments = "/c " + Command;
+                proc1.WindowStyle = ProcessWindowStyle.Maximized;
+                Process.Start(proc1);
+            }
+            catch (Exception o)
+            {
+                loadingLog.Text += "error: " + o.Message;
+            }
         }
 
         public void RunInstallMSI(string filename, string appname)
