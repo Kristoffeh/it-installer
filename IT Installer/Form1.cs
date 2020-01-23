@@ -15,7 +15,7 @@ namespace Acos_Installer
 {
     public partial class Form1 : Form
     {
-        public static string global_version = "8.3";
+        public static string global_version = "8.4";
 
         public Form1()
         {
@@ -102,7 +102,7 @@ namespace Acos_Installer
                 loadingLog.Text += "Starter installasjonen av Forticlient EMS \r\n";
                 RunInstallMSI("msi\\ForticlientEMS.msi", "Forticlient EMS");
             }
-            if (cb_checkforticlient.Checked)
+            /*if (cb_checkforticlient.Checked)
             {
                 int valueschanged = 0;
                 loadingLog.Text += "Sjekker register mot Forticlient EMS \r\n";
@@ -163,13 +163,11 @@ namespace Acos_Installer
                 loadingLog.Text += "Fullført! " + valueschanged.ToString() + " nøkler endret.";
 
             }
-            btn_startInstall.Enabled = true;
+            btn_startInstall.Enabled = true;*/
         }
 
         public void InstallAcrobat()
         {
-           
-
             try
             {
                 loadingLog.Text += "Installerer Acrobat Reader \r\n";

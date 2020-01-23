@@ -45,10 +45,9 @@
             this.cb_variables = new System.Windows.Forms.CheckBox();
             this.cb_installwebsak = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cb_checkforticlient = new System.Windows.Forms.CheckBox();
-            this.cb_forticlientems = new System.Windows.Forms.CheckBox();
-            this.cb_acrobat = new System.Windows.Forms.CheckBox();
             this.cb_firefox = new System.Windows.Forms.CheckBox();
+            this.cb_acrobat = new System.Windows.Forms.CheckBox();
+            this.cb_forticlientems = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -226,7 +225,6 @@
             // 
             this.groupBox3.Controls.Add(this.cb_firefox);
             this.groupBox3.Controls.Add(this.cb_acrobat);
-            this.groupBox3.Controls.Add(this.cb_checkforticlient);
             this.groupBox3.Controls.Add(this.cb_forticlientems);
             this.groupBox3.Controls.Add(this.cb_chrome);
             this.groupBox3.Location = new System.Drawing.Point(16, 260);
@@ -235,39 +233,6 @@
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Annet";
-            // 
-            // cb_checkforticlient
-            // 
-            this.cb_checkforticlient.AutoSize = true;
-            this.cb_checkforticlient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_checkforticlient.Location = new System.Drawing.Point(158, 44);
-            this.cb_checkforticlient.Name = "cb_checkforticlient";
-            this.cb_checkforticlient.Size = new System.Drawing.Size(126, 19);
-            this.cb_checkforticlient.TabIndex = 3;
-            this.cb_checkforticlient.Text = "Forticlient Registry";
-            this.cb_checkforticlient.UseVisualStyleBackColor = true;
-            // 
-            // cb_forticlientems
-            // 
-            this.cb_forticlientems.AutoSize = true;
-            this.cb_forticlientems.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_forticlientems.Location = new System.Drawing.Point(8, 42);
-            this.cb_forticlientems.Name = "cb_forticlientems";
-            this.cb_forticlientems.Size = new System.Drawing.Size(109, 19);
-            this.cb_forticlientems.TabIndex = 2;
-            this.cb_forticlientems.Text = "Forticlient EMS";
-            this.cb_forticlientems.UseVisualStyleBackColor = true;
-            // 
-            // cb_acrobat
-            // 
-            this.cb_acrobat.AutoSize = true;
-            this.cb_acrobat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_acrobat.Location = new System.Drawing.Point(8, 67);
-            this.cb_acrobat.Name = "cb_acrobat";
-            this.cb_acrobat.Size = new System.Drawing.Size(111, 19);
-            this.cb_acrobat.TabIndex = 4;
-            this.cb_acrobat.Text = "Acrobat Reader";
-            this.cb_acrobat.UseVisualStyleBackColor = true;
             // 
             // cb_firefox
             // 
@@ -279,6 +244,28 @@
             this.cb_firefox.TabIndex = 5;
             this.cb_firefox.Text = "Firefox x64";
             this.cb_firefox.UseVisualStyleBackColor = true;
+            // 
+            // cb_acrobat
+            // 
+            this.cb_acrobat.AutoSize = true;
+            this.cb_acrobat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_acrobat.Location = new System.Drawing.Point(158, 44);
+            this.cb_acrobat.Name = "cb_acrobat";
+            this.cb_acrobat.Size = new System.Drawing.Size(111, 19);
+            this.cb_acrobat.TabIndex = 4;
+            this.cb_acrobat.Text = "Acrobat Reader";
+            this.cb_acrobat.UseVisualStyleBackColor = true;
+            // 
+            // cb_forticlientems
+            // 
+            this.cb_forticlientems.AutoSize = true;
+            this.cb_forticlientems.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_forticlientems.Location = new System.Drawing.Point(8, 42);
+            this.cb_forticlientems.Name = "cb_forticlientems";
+            this.cb_forticlientems.Size = new System.Drawing.Size(109, 19);
+            this.cb_forticlientems.TabIndex = 2;
+            this.cb_forticlientems.Text = "Forticlient EMS";
+            this.cb_forticlientems.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -329,7 +316,6 @@
         private System.Windows.Forms.CheckBox cb_installwebsak;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox cb_forticlientems;
-        private System.Windows.Forms.CheckBox cb_checkforticlient;
         private System.Windows.Forms.CheckBox cb_offisiellaapen;
         private System.Windows.Forms.CheckBox cb_acrobat;
         private System.Windows.Forms.CheckBox cb_firefox;
