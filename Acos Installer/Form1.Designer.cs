@@ -37,14 +37,20 @@
             this.cb_trace = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cb_offisiellaapen = new System.Windows.Forms.CheckBox();
             this.cb_apen = new System.Windows.Forms.CheckBox();
             this.cb_citrix = new System.Windows.Forms.CheckBox();
             this.cb_chrome = new System.Windows.Forms.CheckBox();
             this.cb_uninstallwebsak = new System.Windows.Forms.CheckBox();
             this.cb_variables = new System.Windows.Forms.CheckBox();
             this.cb_installwebsak = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cb_firefox = new System.Windows.Forms.CheckBox();
+            this.cb_acrobat = new System.Windows.Forms.CheckBox();
+            this.cb_forticlientems = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_startInstall
@@ -62,7 +68,7 @@
             // 
             this.cb_websak.AutoSize = true;
             this.cb_websak.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_websak.Location = new System.Drawing.Point(6, 19);
+            this.cb_websak.Location = new System.Drawing.Point(8, 19);
             this.cb_websak.Name = "cb_websak";
             this.cb_websak.Size = new System.Drawing.Size(105, 19);
             this.cb_websak.TabIndex = 1;
@@ -73,7 +79,7 @@
             // 
             this.cb_ansettelse.AutoSize = true;
             this.cb_ansettelse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_ansettelse.Location = new System.Drawing.Point(141, 19);
+            this.cb_ansettelse.Location = new System.Drawing.Point(160, 19);
             this.cb_ansettelse.Name = "cb_ansettelse";
             this.cb_ansettelse.Size = new System.Drawing.Size(117, 19);
             this.cb_ansettelse.TabIndex = 1;
@@ -95,7 +101,7 @@
             this.loadingLog.BackColor = System.Drawing.SystemColors.ControlLight;
             this.loadingLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.loadingLog.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadingLog.Location = new System.Drawing.Point(298, 12);
+            this.loadingLog.Location = new System.Drawing.Point(359, 11);
             this.loadingLog.Multiline = true;
             this.loadingLog.Name = "loadingLog";
             this.loadingLog.ReadOnly = true;
@@ -107,7 +113,7 @@
             // 
             this.cb_trace.AutoSize = true;
             this.cb_trace.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_trace.Location = new System.Drawing.Point(6, 44);
+            this.cb_trace.Location = new System.Drawing.Point(8, 44);
             this.cb_trace.Name = "cb_trace";
             this.cb_trace.Size = new System.Drawing.Size(92, 19);
             this.cb_trace.TabIndex = 1;
@@ -121,28 +127,39 @@
             this.groupBox1.Controls.Add(this.cb_ansettelse);
             this.groupBox1.Location = new System.Drawing.Point(14, 87);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(264, 80);
+            this.groupBox1.Size = new System.Drawing.Size(314, 80);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ACOS Snarveier";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cb_offisiellaapen);
             this.groupBox2.Controls.Add(this.cb_apen);
             this.groupBox2.Controls.Add(this.cb_citrix);
-            this.groupBox2.Controls.Add(this.cb_chrome);
-            this.groupBox2.Location = new System.Drawing.Point(12, 173);
+            this.groupBox2.Location = new System.Drawing.Point(14, 173);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(264, 77);
+            this.groupBox2.Size = new System.Drawing.Size(314, 81);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Åpen Sone";
+            // 
+            // cb_offisiellaapen
+            // 
+            this.cb_offisiellaapen.AutoSize = true;
+            this.cb_offisiellaapen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_offisiellaapen.Location = new System.Drawing.Point(8, 44);
+            this.cb_offisiellaapen.Name = "cb_offisiellaapen";
+            this.cb_offisiellaapen.Size = new System.Drawing.Size(129, 19);
+            this.cb_offisiellaapen.TabIndex = 2;
+            this.cb_offisiellaapen.Text = "Offisiell Åpen Sone";
+            this.cb_offisiellaapen.UseVisualStyleBackColor = true;
             // 
             // cb_apen
             // 
             this.cb_apen.AutoSize = true;
             this.cb_apen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_apen.Location = new System.Drawing.Point(6, 44);
+            this.cb_apen.Location = new System.Drawing.Point(8, 19);
             this.cb_apen.Name = "cb_apen";
             this.cb_apen.Size = new System.Drawing.Size(86, 19);
             this.cb_apen.TabIndex = 1;
@@ -153,7 +170,7 @@
             // 
             this.cb_citrix.AutoSize = true;
             this.cb_citrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_citrix.Location = new System.Drawing.Point(140, 19);
+            this.cb_citrix.Location = new System.Drawing.Point(160, 19);
             this.cb_citrix.Name = "cb_citrix";
             this.cb_citrix.Size = new System.Drawing.Size(53, 19);
             this.cb_citrix.TabIndex = 1;
@@ -164,11 +181,11 @@
             // 
             this.cb_chrome.AutoSize = true;
             this.cb_chrome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_chrome.Location = new System.Drawing.Point(6, 19);
+            this.cb_chrome.Location = new System.Drawing.Point(8, 19);
             this.cb_chrome.Name = "cb_chrome";
-            this.cb_chrome.Size = new System.Drawing.Size(113, 19);
+            this.cb_chrome.Size = new System.Drawing.Size(93, 19);
             this.cb_chrome.TabIndex = 1;
-            this.cb_chrome.Text = "Google Chrome";
+            this.cb_chrome.Text = "Chrome x64";
             this.cb_chrome.UseVisualStyleBackColor = true;
             // 
             // cb_uninstallwebsak
@@ -188,9 +205,9 @@
             this.cb_variables.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_variables.Location = new System.Drawing.Point(20, 62);
             this.cb_variables.Name = "cb_variables";
-            this.cb_variables.Size = new System.Drawing.Size(159, 19);
+            this.cb_variables.Size = new System.Drawing.Size(115, 19);
             this.cb_variables.TabIndex = 1;
-            this.cb_variables.Text = "Sjekk db/server variabler";
+            this.cb_variables.Text = "Websak dbsjekk";
             this.cb_variables.UseVisualStyleBackColor = true;
             // 
             // cb_installwebsak
@@ -204,11 +221,58 @@
             this.cb_installwebsak.Text = "Installer Websak pakke";
             this.cb_installwebsak.UseVisualStyleBackColor = true;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.cb_firefox);
+            this.groupBox3.Controls.Add(this.cb_acrobat);
+            this.groupBox3.Controls.Add(this.cb_forticlientems);
+            this.groupBox3.Controls.Add(this.cb_chrome);
+            this.groupBox3.Location = new System.Drawing.Point(16, 260);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(312, 92);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Annet";
+            // 
+            // cb_firefox
+            // 
+            this.cb_firefox.AutoSize = true;
+            this.cb_firefox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_firefox.Location = new System.Drawing.Point(158, 19);
+            this.cb_firefox.Name = "cb_firefox";
+            this.cb_firefox.Size = new System.Drawing.Size(86, 19);
+            this.cb_firefox.TabIndex = 5;
+            this.cb_firefox.Text = "Firefox x64";
+            this.cb_firefox.UseVisualStyleBackColor = true;
+            // 
+            // cb_acrobat
+            // 
+            this.cb_acrobat.AutoSize = true;
+            this.cb_acrobat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_acrobat.Location = new System.Drawing.Point(158, 44);
+            this.cb_acrobat.Name = "cb_acrobat";
+            this.cb_acrobat.Size = new System.Drawing.Size(111, 19);
+            this.cb_acrobat.TabIndex = 4;
+            this.cb_acrobat.Text = "Acrobat Reader";
+            this.cb_acrobat.UseVisualStyleBackColor = true;
+            // 
+            // cb_forticlientems
+            // 
+            this.cb_forticlientems.AutoSize = true;
+            this.cb_forticlientems.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_forticlientems.Location = new System.Drawing.Point(8, 42);
+            this.cb_forticlientems.Name = "cb_forticlientems";
+            this.cb_forticlientems.Size = new System.Drawing.Size(109, 19);
+            this.cb_forticlientems.TabIndex = 2;
+            this.cb_forticlientems.Text = "Forticlient EMS";
+            this.cb_forticlientems.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 424);
+            this.ClientSize = new System.Drawing.Size(634, 424);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.cb_installwebsak);
             this.Controls.Add(this.cb_variables);
             this.Controls.Add(this.cb_uninstallwebsak);
@@ -227,6 +291,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,6 +314,11 @@
         private System.Windows.Forms.CheckBox cb_uninstallwebsak;
         private System.Windows.Forms.CheckBox cb_variables;
         private System.Windows.Forms.CheckBox cb_installwebsak;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.CheckBox cb_forticlientems;
+        private System.Windows.Forms.CheckBox cb_offisiellaapen;
+        private System.Windows.Forms.CheckBox cb_acrobat;
+        private System.Windows.Forms.CheckBox cb_firefox;
     }
 }
 
