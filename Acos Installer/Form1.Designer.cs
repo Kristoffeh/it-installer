@@ -92,7 +92,7 @@
             this.listviewinstalls.Location = new System.Drawing.Point(12, 12);
             this.listviewinstalls.MultiSelect = false;
             this.listviewinstalls.Name = "listviewinstalls";
-            this.listviewinstalls.Size = new System.Drawing.Size(472, 423);
+            this.listviewinstalls.Size = new System.Drawing.Size(482, 423);
             this.listviewinstalls.TabIndex = 7;
             this.listviewinstalls.TileSize = new System.Drawing.Size(449, 30);
             this.listviewinstalls.UseCompatibleStateImageBehavior = false;
@@ -106,14 +106,14 @@
             // cdesc
             // 
             this.cdesc.Text = "Description";
-            this.cdesc.Width = 293;
+            this.cdesc.Width = 303;
             // 
             // btn_newinstall
             // 
             this.btn_newinstall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_newinstall.Location = new System.Drawing.Point(286, 441);
+            this.btn_newinstall.Location = new System.Drawing.Point(310, 441);
             this.btn_newinstall.Name = "btn_newinstall";
-            this.btn_newinstall.Size = new System.Drawing.Size(198, 36);
+            this.btn_newinstall.Size = new System.Drawing.Size(184, 36);
             this.btn_newinstall.TabIndex = 8;
             this.btn_newinstall.Text = "Start Installasjon";
             this.btn_newinstall.UseVisualStyleBackColor = true;
