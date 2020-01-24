@@ -44,7 +44,7 @@
             // 
             this.version.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.version.AutoSize = true;
-            this.version.Location = new System.Drawing.Point(12, 464);
+            this.version.Location = new System.Drawing.Point(12, 463);
             this.version.Name = "version";
             this.version.Size = new System.Drawing.Size(41, 13);
             this.version.TabIndex = 2;
@@ -92,7 +92,7 @@
             this.listviewinstalls.Location = new System.Drawing.Point(12, 12);
             this.listviewinstalls.MultiSelect = false;
             this.listviewinstalls.Name = "listviewinstalls";
-            this.listviewinstalls.Size = new System.Drawing.Size(482, 423);
+            this.listviewinstalls.Size = new System.Drawing.Size(482, 422);
             this.listviewinstalls.TabIndex = 7;
             this.listviewinstalls.TileSize = new System.Drawing.Size(449, 30);
             this.listviewinstalls.UseCompatibleStateImageBehavior = false;
@@ -125,7 +125,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(802, 489);
+            this.ClientSize = new System.Drawing.Size(802, 488);
             this.Controls.Add(this.listviewinstalls);
             this.Controls.Add(this.btn_newinstall);
             this.Controls.Add(this.loadingLog);

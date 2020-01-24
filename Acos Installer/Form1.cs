@@ -15,7 +15,7 @@ namespace Acos_Installer
 {
     public partial class Form1 : Form
     {
-        public static string global_version = "9.0";
+        public static string global_version = "9.1";
 
         public Form1()
         {
@@ -308,14 +308,6 @@ namespace Acos_Installer
                 ConfigureWindowsRegistry();
             }
 
-            // websak pakke
-            if (listviewinstalls.Items[0].Checked)
-            {
-                loadingLog.Text += "Installerer CosDoc 12 Basis \r\n";
-                RunInstallMSI("msi\\Acos.CosDoc.Basis12.msi", "CosDoc 12 Basis");
-                ConfigureWindowsRegistry();
-            }
-
             // avinstaller
             if (listviewinstalls.Items[1].Checked)
             {
@@ -330,67 +322,80 @@ namespace Acos_Installer
                 loadingLog.Text += "Avinstallering fullført.";
             }
 
-            // websak sjekk
+            // websak pakke
             if (listviewinstalls.Items[2].Checked)
+            {
+                loadingLog.Text += "Installerer CosDoc 12 Basis \r\n";
+                RunInstallMSI("msi\\Acos.CosDoc.Basis12.msi", "CosDoc 12 Basis");
+                ConfigureWindowsRegistry();
+            }
+
+            // websak sjekk
+            if (listviewinstalls.Items[3].Checked)
             {
                 ConfigureWindowsRegistry();
             }
 
             // websak snarvei
-            if (listviewinstalls.Items[3].Checked)
+            if (listviewinstalls.Items[4].Checked)
             {
                 CreateShortcut("Websak DRIFT", "C:\\Program Files (x86)\\ACOS AS\\ACOS Websak Basis\\sak.exe", "Sakbehandlingssystem fra ACOS", "C:\\Program Files (x86)\\ACOS AS\\ACOS Websak Basis", "");
             }
 
             // ansettelse snarvei
-            if (listviewinstalls.Items[4].Checked)
+            if (listviewinstalls.Items[5].Checked)
             {
                 CreateShortcut("Websak Ansettelse", "C:\\Program Files (x86)\\ACOS AS\\ACOS Websak Basis\\Ansettelse.exe", "Ansettelse fra ACOS", "C:\\Program Files (x86)\\ACOS AS\\ACOS Websak Basis", "");
             }
 
             // trace snarvei
-            if (listviewinstalls.Items[5].Checked)
+            if (listviewinstalls.Items[6].Checked)
             {
                 CreateShortcut("ACOS Trace Server", "C:\\Program Files (x86)\\ACOS AS\\ACOS WebSak Trace\\Acos.WebSak.TraceServer.exe", "Ansettelse fra ACOS", "C:\\Program Files (x86)\\ACOS AS\\ACOS WebSak Trace", "");
                 CreateShortcut("ACOS Trace Client", "C:\\Program Files (x86)\\ACOS AS\\ACOS WebSak Trace\\Acos.Websak.TraceViewer.StandAlone.exe", "Ansettelse fra ACOS", "C:\\Program Files (x86)\\ACOS AS\\ACOS WebSak Trace", "");
             }
 
             // åpen sone snarvei
-            if (listviewinstalls.Items[6].Checked)
+            if (listviewinstalls.Items[7].Checked)
             {
                 CreateShortcut("Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application", "http://10.10.10.13/Citrix/AccessPlatform/auth/login.aspx");
+            }
+
+            // åpen sone snarvei
+            if (listviewinstalls.Items[8].Checked)
+            {
                 CreateShortcut("Ny Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application", "https://vak-citrixadm.andoy.kommune.no/Citrix/KommuneApplikasjonerWeb/");
             }
 
             // offisiell åpen sone snarvei
-            if (listviewinstalls.Items[7].Checked)
+            if (listviewinstalls.Items[9].Checked)
             {
                 CreateShortcut("Offisiell Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "Offisiell Åpen Sone", "C:\\Program Files (x86)\\Google\\Chrome\\Application", "https://sone.andoy.kommune.no/Citrix/RADCXStoreWeb/");
             }
 
             // chrome x64
-            if (listviewinstalls.Items[8].Checked)
+            if (listviewinstalls.Items[10].Checked)
             {
                 loadingLog.Text += "Starter installasjonen av Chrome \r\n";
                 RunInstallMSI("msi\\Chrome.msi", "Google Chrome");
             }
 
             // firefox x64
-            if (listviewinstalls.Items[9].Checked)
+            if (listviewinstalls.Items[11].Checked)
             {
                 loadingLog.Text += "Installerer Firefox";
                 RunInstallMSI("msi\\Firefox.msi", "Firefox");
             }
 
             // forticlient
-            if (listviewinstalls.Items[10].Checked)
+            if (listviewinstalls.Items[12].Checked)
             {
                 loadingLog.Text += "Starter installasjonen av Forticlient EMS \r\n";
                 RunInstallMSI("msi\\ForticlientEMS.msi", "Forticlient EMS");
             }
 
             // citrix
-            if (listviewinstalls.Items[11].Checked)
+            if (listviewinstalls.Items[13].Checked)
             {
                 InstallCitrix("msi\\CitrixWorkspaceApp.exe", "Citrix Workspace");
             }
