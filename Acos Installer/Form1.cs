@@ -240,14 +240,127 @@ namespace Acos_Installer
 
         public void Form1_Load(object sender, EventArgs e)
         {
+            // set version
             version.Text = "v" + global_version;
-            string[] row1 = { "ACOS Websak", "24.01.2020" };
-            string[] row2 = { "ACOS Websak db sjekk tool", "24.01.2020" };
-            string[] row3 = { "ACOS Websak Avinstallering", "24.01.2020" };
-            listView1.Items.Add("Websak").SubItems.AddRange(row1);
-            listView1.Items.Add("Websak Check").SubItems.AddRange(row2);
-            listView1.Items.Add("Websak Uninstall").SubItems.AddRange(row3);
-            listView1.View = View.Details;
+
+
+
+
+            addapplication("ACOS Websak-pakke", "Installer Andøy Kommunes sakssystem");
+            addapplication("Avinstaller Websak-pakke", "Avinstaller Andøy Kommunes sakssystem");
+            addapplication("Websak sjekk", "Sjekk register for databasestring");
+
+            addapplication("ACOS Websak snarvei", "Opprett snarvei for ACOS Websak");
+            addapplication("ACOS Ansettelse snarvei", "Opprett snarvei for ACOS Ansettelse");
+            addapplication("ACOS Trace snarvei", "Opprett snarvei for ACOS Trace (feilsøking server/client)");
+
+            addapplication("Åpen Sone", "Opprett snarvei til 10.10.10.13 og .7");
+            addapplication("Offisiell Åpen Sone", "Opprett snarvei til sone.andoy.kommune.no");
+
+            addapplication("Chrome x64", "Installasjon for Chrome 64-biters");
+            addapplication("Firefox x64", "Installasjon for Firefox 64-biters");
+            addapplication("Forticlient EMS", "Installasjon for Forticlient EMS");
+            addapplication("Citrix Workspace", "Installasjon for Citrix Workspace");
+
+            // Add applications to group
+            // ACOS
+            listviewinstalls.Items[0].Group = listviewinstalls.Groups[0]; // .Groups[0] er ACOS programmer
+            listviewinstalls.Items[1].Group = listviewinstalls.Groups[0];
+            listviewinstalls.Items[2].Group = listviewinstalls.Groups[0];
+
+            // Snarveier
+            listviewinstalls.Items[3].Group = listviewinstalls.Groups[1];
+            listviewinstalls.Items[4].Group = listviewinstalls.Groups[1];
+            listviewinstalls.Items[5].Group = listviewinstalls.Groups[1];
+            listviewinstalls.Items[6].Group = listviewinstalls.Groups[1];
+            listviewinstalls.Items[7].Group = listviewinstalls.Groups[1];
+
+            // Applikasjoner
+            listviewinstalls.Items[8].Group = listviewinstalls.Groups[2];
+            listviewinstalls.Items[9].Group = listviewinstalls.Groups[2];
+            listviewinstalls.Items[10].Group = listviewinstalls.Groups[2];
+            listviewinstalls.Items[11].Group = listviewinstalls.Groups[2];
+        }
+
+        private void btn_newinstall_Click(object sender, EventArgs e)
+        {
+            // websak pakke
+            if (listviewinstalls.Items[0].Checked)
+            {
+
+            }
+
+            // avinstaller
+            if (listviewinstalls.Items[1].Checked)
+            {
+
+            }
+
+            // websak sjekk
+            if (listviewinstalls.Items[2].Checked)
+            {
+
+            }
+
+            // websak snarvei
+            if (listviewinstalls.Items[3].Checked)
+            {
+
+            }
+
+            // ansettelse snarvei
+            if (listviewinstalls.Items[4].Checked)
+            {
+
+            }
+
+            // trace snarvei
+            if (listviewinstalls.Items[5].Checked)
+            {
+
+            }
+
+            // åpen sone snarvei
+            if (listviewinstalls.Items[6].Checked)
+            {
+
+            }
+
+            // offisiell åpen sone snarvei
+            if (listviewinstalls.Items[7].Checked)
+            {
+
+            }
+
+            // chrome x64
+            if (listviewinstalls.Items[8].Checked)
+            {
+
+            }
+
+            // firefox x64
+            if (listviewinstalls.Items[9].Checked)
+            {
+
+            }
+
+            // forticlient
+            if (listviewinstalls.Items[10].Checked)
+            {
+
+            }
+
+            // citrix
+            if (listviewinstalls.Items[11].Checked)
+            {
+
+            }
+        }
+
+        public void addapplication(string applicationname, string description)
+        {
+            string[] row1 = { description };
+            listviewinstalls.Items.Add(applicationname).SubItems.AddRange(row1);
         }
 
         public void createShortcut(string shortcutName, string shortcutPath, string shortcutDescription, string directory, string shortcutArguments)

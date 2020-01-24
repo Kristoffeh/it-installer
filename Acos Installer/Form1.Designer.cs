@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ACOS", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Snarveier", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Applikasjoner", System.Windows.Forms.HorizontalAlignment.Left);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_startInstall = new System.Windows.Forms.Button();
             this.cb_websak = new System.Windows.Forms.CheckBox();
@@ -48,10 +51,10 @@
             this.cb_firefox = new System.Windows.Forms.CheckBox();
             this.cb_acrobat = new System.Windows.Forms.CheckBox();
             this.cb_forticlientems = new System.Windows.Forms.CheckBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listviewinstalls = new System.Windows.Forms.ListView();
             this.cname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cdesc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cdate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btn_newinstall = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -110,7 +113,7 @@
             this.loadingLog.Name = "loadingLog";
             this.loadingLog.ReadOnly = true;
             this.loadingLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.loadingLog.Size = new System.Drawing.Size(263, 401);
+            this.loadingLog.Size = new System.Drawing.Size(200, 401);
             this.loadingLog.TabIndex = 3;
             // 
             // cb_trace
@@ -271,47 +274,72 @@
             this.cb_forticlientems.Text = "Forticlient EMS";
             this.cb_forticlientems.UseVisualStyleBackColor = true;
             // 
-            // listView1
+            // listviewinstalls
             // 
-            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listView1.CheckBoxes = true;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listviewinstalls.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid;
+            this.listviewinstalls.AllowColumnReorder = true;
+            this.listviewinstalls.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listviewinstalls.BackColor = System.Drawing.SystemColors.Menu;
+            this.listviewinstalls.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listviewinstalls.CheckBoxes = true;
+            this.listviewinstalls.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.cname,
-            this.cdesc,
-            this.cdate});
-            this.listView1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(628, 11);
-            this.listView1.MultiSelect = false;
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(651, 243);
-            this.listView1.TabIndex = 7;
-            this.listView1.TileSize = new System.Drawing.Size(450, 30);
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.cdesc});
+            this.listviewinstalls.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.listviewinstalls.FullRowSelect = true;
+            listViewGroup1.Header = "ACOS";
+            listViewGroup1.Name = "acos";
+            listViewGroup1.Tag = "";
+            listViewGroup2.Header = "Snarveier";
+            listViewGroup2.Name = "snarveier";
+            listViewGroup3.Header = "Applikasjoner";
+            listViewGroup3.Name = "apps";
+            this.listviewinstalls.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup1,
+            listViewGroup2,
+            listViewGroup3});
+            this.listviewinstalls.HideSelection = false;
+            this.listviewinstalls.Location = new System.Drawing.Point(628, 11);
+            this.listviewinstalls.MultiSelect = false;
+            this.listviewinstalls.Name = "listviewinstalls";
+            this.listviewinstalls.Size = new System.Drawing.Size(643, 341);
+            this.listviewinstalls.TabIndex = 7;
+            this.listviewinstalls.TileSize = new System.Drawing.Size(449, 30);
+            this.listviewinstalls.UseCompatibleStateImageBehavior = false;
+            this.listviewinstalls.View = System.Windows.Forms.View.Details;
             // 
             // cname
             // 
             this.cname.Text = "Name";
-            this.cname.Width = 203;
+            this.cname.Width = 240;
             // 
             // cdesc
             // 
             this.cdesc.Text = "Description";
-            this.cdesc.Width = 230;
+            this.cdesc.Width = 400;
             // 
-            // cdate
+            // btn_newinstall
             // 
-            this.cdate.Text = "Date";
-            this.cdate.Width = 218;
+            this.btn_newinstall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_newinstall.Location = new System.Drawing.Point(628, 376);
+            this.btn_newinstall.Name = "btn_newinstall";
+            this.btn_newinstall.Size = new System.Drawing.Size(198, 36);
+            this.btn_newinstall.TabIndex = 8;
+            this.btn_newinstall.Text = "Start Installasjon";
+            this.btn_newinstall.UseVisualStyleBackColor = true;
+            this.btn_newinstall.Click += new System.EventHandler(this.btn_newinstall_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1430, 424);
-            this.Controls.Add(this.listView1);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1294, 424);
+            this.Controls.Add(this.btn_newinstall);
+            this.Controls.Add(this.listviewinstalls);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.cb_installwebsak);
             this.Controls.Add(this.cb_variables);
@@ -359,10 +387,10 @@
         private System.Windows.Forms.CheckBox cb_offisiellaapen;
         private System.Windows.Forms.CheckBox cb_acrobat;
         private System.Windows.Forms.CheckBox cb_firefox;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listviewinstalls;
         private System.Windows.Forms.ColumnHeader cname;
         private System.Windows.Forms.ColumnHeader cdesc;
-        private System.Windows.Forms.ColumnHeader cdate;
+        private System.Windows.Forms.Button btn_newinstall;
     }
 }
 

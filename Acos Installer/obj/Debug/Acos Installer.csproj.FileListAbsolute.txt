@@ -66,3 +66,14 @@ C:\xampp\htdocs\IT Installer\obj\Debug\Acos Installer.csproj.GenerateResource.ca
 C:\xampp\htdocs\IT Installer\bin\Debug\IT Installer.exe.config
 C:\xampp\htdocs\IT Installer\bin\Debug\IT Installer.exe
 C:\xampp\htdocs\IT Installer\bin\Debug\IT Installer.pdb
+C:\xampp\htdocs\Acos Installer\obj\Debug\Acos Installer.csprojAssemblyReference.cache
+C:\xampp\htdocs\Acos Installer\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\xampp\htdocs\Acos Installer\obj\Debug\Acos Installer.csproj.ResolveComReference.cache
+C:\xampp\htdocs\Acos Installer\obj\Debug\Acos_Installer.Form1.resources
+C:\xampp\htdocs\Acos Installer\obj\Debug\IT_Installer.Properties.Resources.resources
+C:\xampp\htdocs\Acos Installer\obj\Debug\Acos Installer.csproj.GenerateResource.cache
+C:\xampp\htdocs\Acos Installer\obj\Debug\IT Installer.exe
+C:\xampp\htdocs\Acos Installer\obj\Debug\IT Installer.pdb
+C:\xampp\htdocs\Acos Installer\bin\Debug\IT Installer.exe.config
+C:\xampp\htdocs\Acos Installer\bin\Debug\IT Installer.exe
+C:\xampp\htdocs\Acos Installer\bin\Debug\IT Installer.pdb
