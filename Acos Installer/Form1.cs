@@ -241,6 +241,13 @@ namespace Acos_Installer
         public void Form1_Load(object sender, EventArgs e)
         {
             version.Text = "v" + global_version;
+            string[] row1 = { "ACOS Websak", "24.01.2020" };
+            string[] row2 = { "ACOS Websak db sjekk tool", "24.01.2020" };
+            string[] row3 = { "ACOS Websak Avinstallering", "24.01.2020" };
+            listView1.Items.Add("Websak").SubItems.AddRange(row1);
+            listView1.Items.Add("Websak Check").SubItems.AddRange(row2);
+            listView1.Items.Add("Websak Uninstall").SubItems.AddRange(row3);
+            listView1.View = View.Details;
         }
 
         public void createShortcut(string shortcutName, string shortcutPath, string shortcutDescription, string directory, string shortcutArguments)

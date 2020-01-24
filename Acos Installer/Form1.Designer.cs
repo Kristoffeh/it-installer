@@ -48,6 +48,10 @@
             this.cb_firefox = new System.Windows.Forms.CheckBox();
             this.cb_acrobat = new System.Windows.Forms.CheckBox();
             this.cb_forticlientems = new System.Windows.Forms.CheckBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.cname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cdesc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cdate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -172,9 +176,9 @@
             this.cb_citrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_citrix.Location = new System.Drawing.Point(160, 19);
             this.cb_citrix.Name = "cb_citrix";
-            this.cb_citrix.Size = new System.Drawing.Size(53, 19);
+            this.cb_citrix.Size = new System.Drawing.Size(117, 19);
             this.cb_citrix.TabIndex = 1;
-            this.cb_citrix.Text = "Citrix";
+            this.cb_citrix.Text = "Citrix Workspace";
             this.cb_citrix.UseVisualStyleBackColor = true;
             // 
             // cb_chrome
@@ -267,11 +271,47 @@
             this.cb_forticlientems.Text = "Forticlient EMS";
             this.cb_forticlientems.UseVisualStyleBackColor = true;
             // 
+            // listView1
+            // 
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listView1.CheckBoxes = true;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.cname,
+            this.cdesc,
+            this.cdate});
+            this.listView1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(628, 11);
+            this.listView1.MultiSelect = false;
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(651, 243);
+            this.listView1.TabIndex = 7;
+            this.listView1.TileSize = new System.Drawing.Size(450, 30);
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // cname
+            // 
+            this.cname.Text = "Name";
+            this.cname.Width = 203;
+            // 
+            // cdesc
+            // 
+            this.cdesc.Text = "Description";
+            this.cdesc.Width = 230;
+            // 
+            // cdate
+            // 
+            this.cdate.Text = "Date";
+            this.cdate.Width = 218;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 424);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1430, 424);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.cb_installwebsak);
             this.Controls.Add(this.cb_variables);
@@ -319,6 +359,10 @@
         private System.Windows.Forms.CheckBox cb_offisiellaapen;
         private System.Windows.Forms.CheckBox cb_acrobat;
         private System.Windows.Forms.CheckBox cb_firefox;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader cname;
+        private System.Windows.Forms.ColumnHeader cdesc;
+        private System.Windows.Forms.ColumnHeader cdate;
     }
 }
 
